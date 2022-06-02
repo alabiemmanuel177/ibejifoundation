@@ -1,0 +1,94 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.aboutus-card {
+  display: flex;
+  flex-direction: row;
+  width: 1261px;
+  height: 333px;
+  background-color: #ca971a;
+  border-radius: 20px;
+  align-items: center;
+  padding: 63px 34px;
+  gap: 129px;
+  margin-bottom: 50px;
+}
+.aboutus-text {
+  width: 70%;
+  color: #fff;
+}
+.aboutus-text h1 {
+  font-size: 30px;
+}
+.aboutus-text p {
+  font-size: 16px;
+}
+.aboutus-button button {
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #48b975;
+  border: 0;
+  border-radius: 20px;
+  width: 265px;
+  height: 63px;
+}
+.sponsor-card {
+  margin-bottom: 100px;
+}
+.sponsor-card h1 {
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  color: #737272;
+}
+.sponsor-card img {
+  width: 146.35px;
+  height: 168.2px;
+  left: 0px;
+  top: 1.4px;
+}
+.sponsor-card-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 23px;
+  width: 993.09px;
+  height: 169.6px;
+  margin-bottom: 27px;
+}
+.work-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 237px;
+  width: 1308px;
+  height: 421px;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+.work-card-image{
+    text-align: center;
+}
+.work-card-image img {
+  width: 278px;
+  height: 323px;
+}
+.work-card-image h1 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.01em;
+}
+.work-card-image h2 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: rgba(72, 185, 117, 0.98);
+}
