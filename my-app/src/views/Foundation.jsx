@@ -1,9 +1,13 @@
 import React from "react";
 import "./foundation.css";
+import { Navbar } from "../components/navbar/Navbar";
+import { Footer } from "../components/footer/Footer";
 
 export const Foundation = () => {
   return (
     <div className="thefoundation">
+      <Navbar/>
+
       <div className="header">
         <h1>The Foundation</h1>
       </div>
@@ -40,6 +44,7 @@ export const Foundation = () => {
             <img src="" alt="" />
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };
