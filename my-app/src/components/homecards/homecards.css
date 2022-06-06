@@ -10,7 +10,7 @@
   width: 1261px;
   height: 333px;
   background-color: #ca971a;
-  border-radius: 20px;
+  border-radius: 5px !important;
   align-items: center;
   padding: 63px 34px;
   gap: 129px;
@@ -68,3 +68,141 @@
   letter-spacing: 0.01em;
   color: rgba(72, 185, 117, 0.98);
 }
+
+
+@media screen and (max-width:1366px) {
+  .aboutus-card {
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    height: 250px;
+    background-color: #ca971a;
+    border-radius: 20px;
+    align-items: center;
+    padding: 63px 34px;
+    /* gap: 129px; */
+    margin-bottom: 50px;
+  }
+
+  .aboutus-text h1 {
+    font-size: 23px;
+  }
+  .aboutus-text p {
+    font-size: 15px;
+  }
+  
+  .aboutus-button button {
+    width: 150px;
+    height: 53px;
+   
+  }
+
+  .aboutus-text{
+    width: 70%;
+    margin-left: 5%;
+  }
+
+  .aboutus-button{
+    margin-right: 5%;
+  }
+
+  .work-card-image img{
+    width: 250px;
+    height: 300px;
+  }
+  .work-card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 0px;
+    width: 1308px;
+    gap: 0px;
+    height: 421px;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+  }
+}
+
+@media screen and (max-width:768px){
+   .aboutus-card {
+    display: flex;
+    flex-direction: row;
+    width: 750px;
+    height: 300px;
+    background-color: #ca971a;
+    border-radius: 20px;
+    align-items: center;
+    padding: 63px 34px;
+    /* gap: 129px; */
+    margin-bottom: 50px;
+  }
+  
+  .work-card-image img{
+    width: 200px;
+    height: 300px;
+  }
+
+  .work-card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 0px;
+    width: 768px;
+    gap: 0px;
+    height: 421px;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+  }
+
+  .aboutus-text h1{
+    font-size: 16px;
+  }
+
+  .aboutus-text p{
+    font-size: 12px !important;
+  }
+   
+
+ 
+}
+
+
+ @media screen and (max-width:425px){
+  .aboutus-card{
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    width: 425px;
+  }
+
+  .aboutus-text{
+    width: 100%;
+  }
+
+  .aboutus-button{
+    position: relative;
+    bottom: 70px;
+    
+  }
+
+  .aboutus-button button{
+      width: 300px;
+  }
+
+  .work-card{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 300px;
+     }
+
+     .work-card-image{
+       width: 100%;
+     }
+
+
+  
+} 

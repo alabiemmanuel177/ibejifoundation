@@ -50,3 +50,10 @@ form .col-12 button:hover{
     align-items: center;
 }
 
+@media screen and (max-width:768px) {
+    .footer-form{
+        width: 45%;
+        margin-left: 10px;
+    } 
+}
+

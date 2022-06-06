@@ -71,3 +71,10 @@
     align-items: center;
     justify-content: center;
 }
+
+@media screen and (max-width:1366px){
+  .intro h1{
+    width: 1000px !important;
+
+  }
+}
