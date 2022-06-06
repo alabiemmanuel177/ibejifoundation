@@ -1,10 +1,13 @@
 import React from "react";
 import { Carousel } from "../components/carousel/Carousel";
 import './project.css'
+import { Navbar } from "../components/navbar/Navbar";
+import { Footer } from "../components/footer/Footer";
 
 export const Project = () => {
   return (
     <div className="Project">
+      <Navbar/>
       <div className="miniproject">
         <Carousel />
         <div className="miniproject-text">
@@ -61,6 +64,7 @@ export const Project = () => {
           </h3>
         </div>        
       </div>
+      <Footer/>
     </div>
   );
 };
