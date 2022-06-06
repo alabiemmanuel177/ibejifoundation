@@ -25,8 +25,7 @@ export const Homecards = () => {
           <button>Ibeji Foundation</button>
         </div>
       </div>
-      <Sponsor/>
-      
+      <Sponsor/>      
       <div className="work-card">
           <div className="work-card-image">
               <img src="" alt="" />

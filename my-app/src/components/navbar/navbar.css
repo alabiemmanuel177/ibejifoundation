@@ -1,6 +1,5 @@
 .navbar {
-  overflow: hidden;
-  width: 100%;
+  
   background-color: #ca971a;
   flex-direction: row;
 }
@@ -14,7 +13,7 @@
   flex-grow: 0;
   color: #ffffff !important; 
   display: flex;
-  margin-right: 10%;
+  /* margin-right: 10%; */
 }
 .navbar-btn a {
   padding: 10px ;
