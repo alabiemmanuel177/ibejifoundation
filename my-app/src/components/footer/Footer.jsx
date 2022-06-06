@@ -7,29 +7,29 @@ export const Footer = () => {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"/>
         <div className="footer-form">
             <p>Contact Us</p>
-            <form class="row g-">
-                <div class="col-md-6">
+            <form className="row g-">
+                <div className="col-md-6">
                     <label for="inputFirstName" className="form-label">FirstName</label>
                     <input type="text" className="form-control" id="inputFirstName"/>
                 </div>
-                <div class="col-md-6">
+                <div className="col-md-6">
                     <label for="inputLastName" className="form-label">LastName</label>
                     <input type="Text" className="form-control" id="inputLastName"/>
                 </div>
-                <div class="col-md-6">
+                <div className="col-md-6">
                     <label for="inputEmail4" className="form-label">Email</label>
                     <input type="email" className="form-control" id="inputEmail4"/>
                 </div>
-                <div class="col-md-6">
+                <div className="col-md-6">
                     <label for="inputPhoneNumber" className="form-label">Phone Number</label>
                     <input type="digit" className="form-control" id="inputPhoneNumber"/>
                 </div>
-                <div class="col-md-12">
+                <div className="col-md-12">
                     <label for="textarea" className="form-label">Message</label>
                     <textarea className="form-control" aria-label="With textarea" id='textarea'></textarea>
                 </div>                
-                <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                <div className="col-12">
+                    <button type="submit" className="btn btn-primary">Submit</button>
                 </div>
             </form>           
         </div>

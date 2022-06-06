@@ -7,7 +7,7 @@
 .aboutus-card {
   display: flex;
   flex-direction: row;
-  width: 1261px;
+  width: 70%;
   height: 333px;
   background-color: #ca971a;
   border-radius: 20px;
