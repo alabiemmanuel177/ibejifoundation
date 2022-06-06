@@ -58,3 +58,17 @@ form .col-12 button:hover{
     } 
 }
 
+@media screen and (max-width:425px) {
+  .footer{
+      display: flex;
+      flex-direction: column;
+      margin-top: 200px;
+      height: 700px;
+      
+
+  }
+
+
+    
+}
+
