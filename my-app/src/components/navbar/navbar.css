@@ -3,7 +3,6 @@
   width: 100%;
   background-color: #ca971a;
   flex-direction: row;
-  margin-bottom: 50px;
 }
 .navbar-btn {
   float: right;
@@ -13,15 +12,17 @@
   flex: none;
   order: 2;
   flex-grow: 0;
-  color: #ffffff;
+  color: #ffffff !important; 
   display: flex;
   margin-right: 10%;
 }
 .navbar-btn a {
-  padding: 14px 16px;
+  padding: 10px ;
+  color: #ffffff !important;
+  text-decoration: none;
 }
 .navbar-btn a:hover{
     background-color: #fff;
-    color: rgba(72, 185, 117, 0.98);
-
+    color: rgba(72, 185, 117, 0.98) !important;
+    border-radius: 25px;
 }

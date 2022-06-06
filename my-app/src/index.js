@@ -1,18 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import { Navbar } from './components/navbar/Navbar';
-import { Footer } from './components/footer/Footer';
-import { Carousel } from './components/carousel/Carousel';
-import { Homecards } from './components/homecards/Homecards';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./index.css";
+import { Navbar } from "./components/navbar/Navbar";
+import { Footer } from "./components/footer/Footer";
+import { Home } from "./views/Home";
+import { Aboutus } from "./views/Aboutus";
+import {Foundation} from "./views/Foundation"
+import { Project } from "./views/Project";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Navbar />
-    <Carousel/>
-    <Homecards/>
-    <Footer/>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route index element={<Home/>} path="/" />
+        <Route element={<Aboutus/>} path="aboutus" />
+        <Route element={<Foundation/>} path="thefoundation" />
+        <Route element={<Project/>} path="project" />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   </React.StrictMode>
 );
-

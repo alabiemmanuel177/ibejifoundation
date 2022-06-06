@@ -1,5 +1,6 @@
 import React from "react";
 import "./homecards.css";
+import { Sponsor } from "../sponsor/Sponsor";
 
 export const Homecards = () => {
   return (
@@ -24,17 +25,8 @@ export const Homecards = () => {
           <button>Ibeji Foundation</button>
         </div>
       </div>
-      <div className="sponsor-card">
-        <div className="sponsor-card-images">
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-        </div>
-        <h1>Sponsors</h1>
-      </div>
+      <Sponsor/>
+      
       <div className="work-card">
           <div className="work-card-image">
               <img src="" alt="" />

@@ -36,30 +36,6 @@
   width: 265px;
   height: 63px;
 }
-.sponsor-card {
-  margin-bottom: 100px;
-}
-.sponsor-card h1 {
-  font-weight: 500;
-  font-size: 24px;
-  text-align: center;
-  color: #737272;
-}
-.sponsor-card img {
-  width: 146.35px;
-  height: 168.2px;
-  left: 0px;
-  top: 1.4px;
-}
-.sponsor-card-images {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 23px;
-  width: 993.09px;
-  height: 169.6px;
-  margin-bottom: 27px;
-}
 .work-card {
   display: flex;
   flex-direction: row;
