@@ -9,8 +9,8 @@ export const Footer = () => {
             <p>Contact Us</p>
             <form className="row g-">
                 <div className="col-md-6">
-                    <label for="inputFirstName" className="form-label">FirstName</label>
-                    <input type="text" className="form-control" id="inputFirstName"/>
+                    <label for="inputFirstName" className="form-label ">FirstName</label>
+                    <input type="text" className="form-control txt-spc" id="inputFirstName"/>
                 </div>
                 <div className="col-md-6">
                     <label for="inputLastName" className="form-label">LastName</label>
