@@ -1,70 +1,27 @@
 import React from "react";
-import { Carousel } from "../components/carousel/Carousel";
-import './project.css'
+import { useEffect, useState } from "react";
+import "./project.css";
 import { Navbar } from "../components/navbar/Navbar";
 import { Footer } from "../components/footer/Footer";
+import axios from "axios";
+import { Posts } from "../components/posts/Posts";
 
-export const Project = () => {
+export const Project = ()=> {
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    const fetchPosts = async ()=> {
+      const res = await axios.get("/posts");
+      setPosts(res.data)
+    };
+    fetchPosts();
+  }, []);
+
   return (
     <div className="Project">
-      <Navbar/>
-      <div className="miniproject">
-        <Carousel />
-        <div className="miniproject-text">
-          <h1>
-          January to December 2012 PROJECTS     
-          </h1>
-          <h3>
-          Many jobs were carried out from January to Decemberr 2012. We have touched various aspect of <br></br>humanitarian work which is outline and mention in details below
-          </h3>
-          <h3 className="bold">
-          Ajumoni central mosque Oworoshoki
-          </h3>
-        </div>        
-      </div>
-      <div className="miniproject">
-        <Carousel />
-        <div className="miniproject-text">
-          <h1>
-          January to December 2012 PROJECTS     
-          </h1>
-          <h3>
-          Many jobs were carried out from January to Decemberr 2012. We have touched various aspect of <br></br>humanitarian work which is outline and mention in details below
-          </h3>
-          <h3 className="bold">
-          Ajumoni central mosque Oworoshoki
-          </h3>
-        </div>        
-      </div>
-      <div className="miniproject">
-        <Carousel />
-        <div className="miniproject-text">
-          <h1>
-          January to December 2012 PROJECTS     
-          </h1>
-          <h3>
-          Many jobs were carried out from January to Decemberr 2012. We have touched various aspect of <br></br>humanitarian work which is outline and mention in details below
-          </h3>
-          <h3 className="bold">
-          Ajumoni central mosque Oworoshoki
-          </h3>
-        </div>        
-      </div>
-      <div className="miniproject">
-        <Carousel />
-        <div className="miniproject-text">
-          <h1>
-          January to December 2012 PROJECTS     
-          </h1>
-          <h3>
-          Many jobs were carried out from January to Decemberr 2012. We have touched various aspect of <br></br>humanitarian work which is outline and mention in details below
-          </h3>
-          <h3 className="bold">
-          Ajumoni central mosque Oworoshoki
-          </h3>
-        </div>        
-      </div>
-      <Footer/>
+      <Navbar />
+      <Posts posts={posts} />        
+      <Footer />
     </div>
   );
 };

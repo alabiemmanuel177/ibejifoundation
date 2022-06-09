@@ -11,9 +11,14 @@ const PostSchema = new mongoose.Schema(
           type:String,
           required:true,
       },
+      beneficiary:{
+        type:String,
+        required:true,
+
+      },
       photo:{
           type:String,
-          required:true,
+        //   required:true,
       }},
   { timestamps: true }
 );
