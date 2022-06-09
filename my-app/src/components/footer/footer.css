@@ -62,7 +62,12 @@ form .col-12 button:hover {
   .footer {
     display: flex;
     flex-direction: column;
-    margin-top: 200px;
+    margin-top: 300px;
     height: 700px;
+  }
+
+  .footer-form {
+    width: 80%;
+    /* margin-left: 150px; */
   }
 }

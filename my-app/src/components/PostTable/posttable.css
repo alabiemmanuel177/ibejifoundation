@@ -1,0 +1,16 @@
+td{
+    width: 20%;
+}
+
+.hold{
+  
+   overflow: auto; 
+   display: block !important;
+   width: 100% !important;
+    height: 100px !important;
+}
+
+.posts{
+    width: 90%;
+    margin-left: 5%;
+}
