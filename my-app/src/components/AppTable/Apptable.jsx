@@ -7,7 +7,7 @@ function Apptable(){
             <div className='post'>
         <h1 className='page-head'>Applicants</h1>
         <div className='table-holder2'>
-        <table class="table table-bordered table-width">
+        <table className="table table-bordered table-width">
   <thead>
     <tr>
       <th scope="col">ID</th>

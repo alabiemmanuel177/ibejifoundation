@@ -16,30 +16,30 @@ function FullBtn (){
                   <Popup1 trigger={buttonPopup} setTrigger={setButtonPopup}>
                   <form>
             <h2>Edit Employee Info</h2>
-        <div class="form-row">
-         <div class="form-group form-edit">
-              <label for="post-header">Post Header</label>
-              <input type="text" class="form-control input-edit" id="inputAddress" placeholder="Post Header"></input>
+        <div className="form-row">
+         <div className="form-group form-edit">
+              <label /*for="post-header"*/>Post Header</label>
+              <input type="text" className="form-control input-edit" id="inputAddress" placeholder="Post Header"></input>
           </div>
-          <div class="form-group">
-            <label for="inputPassword4">Post Summary</label>
-            {/* <input type="text" class="form-control" id="inputPassword4" placeholder="Last Name"></input> */}
+          <div className="form-group">
+            <label /*for="inputPassword4"*/>Post Summary</label>
+            {/* <input type="text" className="form-control" id="inputPassword4" placeholder="Last Name"></input> */}
             <textarea className="txt-area " id="exampleFormControlTextarea1"></textarea>
           </div>
       </div>
-    <div class="form-group">
-            <label for="inputAddress2">Beneficiary</label>
-            <input type="text" class="form-control" id="inputAddress2"></input>
+    <div className="form-group">
+            <label /*for="inputAddress2"*/>Beneficiary</label>
+            <input type="text" className="form-control" id="inputAddress2"></input>
         </div>
-        <div class="form-row">
-           <div class="input-group mb-3 mt-2">
-          <div class="custom-file">
+        <div className="form-row">
+           <div className="input-group mb-3 mt-2">
+          <div className="custom-file">
             <label>Post Image</label><br></br>
-            <input type="file" class="custom-file-input" id="inputGroupFile01"></input>
+            <input type="file" className="custom-file-input" id="inputGroupFile01"></input>
           </div>
         </div>
         </div>
-        <button type="submit" class="btn btn-primary save-btn">Save</button>
+        <button type="submit" className="btn btn-primary save-btn">Save</button>
       </form>
                   </Popup1>
                   <button onClick={() => sBtn(true)} className="spc2"><Svg2></Svg2></button>

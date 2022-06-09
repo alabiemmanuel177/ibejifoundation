@@ -10,7 +10,7 @@ import { Foundation } from "./views/Foundation";
 import { Project } from "./views/Project";
 import { Admin } from "./views/Admin";
 import Login from "./views/Login";
-import { Applicants } from "./views/Applicants";
+import { Applicants } from "./views/applicants";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
