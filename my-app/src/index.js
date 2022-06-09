@@ -9,6 +9,8 @@ import { Aboutus } from "./views/Aboutus";
 import { Foundation } from "./views/Foundation";
 import { Project } from "./views/Project";
 import { Admin } from "./views/Admin";
+import Login from "./views/Login";
+import { Applicants } from "./views/Applicants";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -21,6 +23,8 @@ root.render(
           <Route element={<Aboutus />} path="aboutus" />
           <Route element={<Foundation />} path="thefoundation" />
           <Route element={<Project />} path="project" />
+          <Route element={<Login/>} path="login"/>
+          <Route element={<Applicants/>} path="applicants"/>
       </Routes>
     </BrowserRouter>    
   </React.StrictMode>
