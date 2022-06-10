@@ -1,31 +1,13 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "./index.css";
-import { Navbar } from "./components/navbar/Navbar";
-import { Footer } from "./components/footer/Footer";
-import { Home } from "./views/Home";
-import { Aboutus } from "./views/Aboutus";
-import { Foundation } from "./views/Foundation";
-import { Project } from "./views/Project";
-import { Admin } from "./views/Admin";
-import Login from "./views/Login";
-import { Applicants } from "./views/applicants";
+import  ReactDOM  from "react-dom";
+import { App } from "./views/App";
+import { ContextProvider } from "./components/context/Context";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
+ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-    {/* <Navbar/> */}
-      <Routes>
-        <Route element={<Admin />} path="admin" />
-          <Route index element={<Home />} path="/" />
-          <Route element={<Aboutus />} path="aboutus" />
-          <Route element={<Foundation />} path="thefoundation" />
-          <Route element={<Project />} path="project" />
-          <Route element={<Login/>} path="login"/>
-          <Route element={<Applicants/>} path="applicants"/>
-      </Routes>
-    </BrowserRouter>    
-  </React.StrictMode>
-);
+    <ContextProvider>
+      <App/>
+    </ContextProvider>
+  </React.StrictMode>,
+  document.getElementById('root')
+)
