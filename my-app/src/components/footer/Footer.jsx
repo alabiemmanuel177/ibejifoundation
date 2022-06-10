@@ -9,23 +9,23 @@ export const Footer = () => {
             <p>Contact Us</p>
             <form className="row g-">
                 <div className="col-md-6">
-                    <label for="inputFirstName" className="form-label ">FirstName</label>
-                    <input type="text" className="form-control txt-spc" id="inputFirstName"/>
+                    <label /*for="inputFirstName"*/ className="form-label">FirstName</label>
+                    <input type="text" className="form-control" id="inputFirstName"/>
                 </div>
                 <div className="col-md-6">
-                    <label for="inputLastName" className="form-label">LastName</label>
+                    <label /*for="inputLastName"*/ className="form-label">LastName</label>
                     <input type="Text" className="form-control" id="inputLastName"/>
                 </div>
                 <div className="col-md-6">
-                    <label for="inputEmail4" className="form-label">Email</label>
+                    <label /*for="inputEmail4"*/ className="form-label">Email</label>
                     <input type="email" className="form-control" id="inputEmail4"/>
                 </div>
                 <div className="col-md-6">
-                    <label for="inputPhoneNumber" className="form-label">Phone Number</label>
+                    <label /*for="inputPhoneNumber"*/ className="form-label">Phone Number</label>
                     <input type="digit" className="form-control" id="inputPhoneNumber"/>
                 </div>
                 <div className="col-md-12">
-                    <label for="textarea" className="form-label">Message</label>
+                    <label /*for="textarea"*/ className="form-label">Message</label>
                     <textarea className="form-control" aria-label="With textarea" id='textarea'></textarea>
                 </div>                
                 <div className="col-12">

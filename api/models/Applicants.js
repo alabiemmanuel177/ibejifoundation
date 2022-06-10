@@ -1,26 +1,27 @@
 const mongoose = require("mongoose");
 
-const PostSchema = new mongoose.Schema(
+const ApplicantSchema = new mongoose.Schema(
   {
-      title: {
+      Name: {
           type: String,
           required: true,
-          unique:true
       },
-      desc:{
+      Email_Address:{
           type:String,
           required:true,
       },
-      beneficiary:{
+      Type:{
         type:String,
         required:true,
-
+    },
+      Phone_No:{
+        type:String,
+        required:true,
       },
-      photo:{
+      Address:{
           type:String,
-        //   required:true,
       }},
   { timestamps: true }
 );
 
-module.exports = mongoose.model("Post", PostSchema)
+module.exports = mongoose.model("Applicant", ApplicantSchema)

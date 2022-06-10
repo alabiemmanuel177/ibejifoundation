@@ -13,9 +13,9 @@ export const Navbar = () => {
         <Link to="/aboutus" className="Nlink"><a>About Us</a></Link>
         <Link to="/thefoundation" className="Nlink" ><a>The Foundation</a></Link>
         <Link to="/project" className="Nlink"><a>Project</a></Link>
-        <div class="dropdown">
+        <div className="dropdown">
         <Link to="#" className=" dropbtn hamburger"><a><GiHamburgerMenu/></a></Link>
-       <div class="dropdown-content">
+       <div className="dropdown-content">
        <Link to="/" className="Nlink"><a>Home</a></Link>
        <Link to="/aboutus" className="Nlink"><a>About Us</a></Link>
        <Link to="/thefoundation" className="Nlink" ><a>The Foundation</a></Link>
