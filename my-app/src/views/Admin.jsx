@@ -39,8 +39,7 @@ export const Admin = () => {
           
           <p className='option'><BsPeople className="o-icon"/><a onClick={() => setActive("FirstTable")}>Posts</a></p>
           <p className='option' ><AiOutlineTable className="o-icon"/><a onClick={() => setActive("SecondTable")}>Applicants</a></p>
-          <p className='option'><BsPeople className="o-icon"/><a>Applicants</a></p>
-          <p className='option'><AiOutlineTable className="o-icon"/><a>Posts</a></p>
+        
        </div>
      
       </div>

@@ -11,6 +11,7 @@ import { Project } from "./views/Project";
 import { Admin } from "./views/Admin";
 import Login from "./views/Login";
 import { Applicants } from "./views/Applicants";
+import Protectedroutes from "./components/Protectedroutes/Protectedroutes";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -24,7 +25,9 @@ root.render(
           <Route element={<Foundation />} path="thefoundation" />
           <Route element={<Project />} path="project" />
           <Route element={<Login/>} path="login"/>
+          <Route element={<Protectedroutes/> }>
           <Route element={<Applicants/>} path="applicants"/>
+          </Route>
       </Routes>
     </BrowserRouter>    
   </React.StrictMode>
