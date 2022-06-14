@@ -1,9 +1,8 @@
 import React from "react";
-import './table.css'
-import FullBtn from '../SvgFunc/FullBtn'
+import "./table.css";
+import FullBtn from "../SvgFunc/FullBtn";
 
-
-export const Table = ({post}) => {
+export const Table = ({ post }) => {
   return (
     <div className="table-holder2">
       <table className="table table-bordered table-width">
@@ -19,14 +18,19 @@ export const Table = ({post}) => {
         </thead>
         <tbody>
           <tr className="wrap">
-            <th scope="row">1</th>
+            <th scope="row">{post._id}</th>
             <td>{post.title}</td>
-            <td className="hold">{post.desc}
-            </td>
+            <td className="hold">{post.desc}</td>
             <td>Farm.jpg</td>
             <td>{post.beneficiary}</td>
             <td>
-              <FullBtn/>
+              <FullBtn
+                path={post._id}
+                post={post}
+                title={post.title}
+                desc={post.desc}
+                beneficiary={post.beneficiary}
+              />
             </td>
           </tr>
         </tbody>

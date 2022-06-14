@@ -2,30 +2,36 @@ import React, { useContext } from "react";
 import "./admin.css";
 import PostTable from "../components/PostTable/PostTable";
 import Apptable from "../components/AppTable/Apptable";
-import { useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 import { BsPeople } from "react-icons/bs";
 import { AiOutlineTable } from "react-icons/ai";
 import { MdArrowDropDown } from "react-icons/md";
-import axios from 'axios'
+import axios from "axios";
 import { Context } from "../components/context/Context";
 
 export const Admin = () => {
   const [active, setActive] = useState("FirstTable");
   const [posts, setPosts] = useState([]);
+  const [title, setTitle] = useState("");
+  const [desc, setDesc] = useState("");
+  const [beneficiary, setBeneficiary] = useState("");
 
   useEffect(() => {
-    const fetchPosts = async ()=> {
+    const fetchPosts = async () => {
       const res = await axios.get("/posts");
-      setPosts(res.data)
+      setPosts(res.data);
+      setTitle(res.data.title);
+      setDesc(res.data.desc);
+      setBeneficiary(res.data.beneficiary);
     };
     fetchPosts();
   }, []);
 
-  const {user, dispatch} = useContext(Context)
+  const { user, dispatch } = useContext(Context);
 
   const handleLogout = () => {
-    dispatch({type:"LOGOUT"})
-  }
+    dispatch({ type: "LOGOUT" });
+  };
 
   return (
     <div className="admin-holder">
@@ -62,12 +68,18 @@ export const Admin = () => {
                 <AiOutlineTable className="o-icon" />
                 <a onClick={() => setActive("SecondTable")}>Applicants</a>
               </p>
-           
             </div>
           </div>
         </div>
       </div>
-      {active === "FirstTable" && <PostTable posts={posts} />}
+      {active === "FirstTable" && (
+        <PostTable
+          posts={posts}
+          title={title}
+          desc={desc}
+          beneficiary={beneficiary}
+        />
+      )}
       {active === "SecondTable" && <Apptable />}
     </div>
   );

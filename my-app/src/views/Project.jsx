@@ -6,13 +6,13 @@ import { Footer } from "../components/footer/Footer";
 import axios from "axios";
 import { Posts } from "../components/posts/Posts";
 
-export const Project = ()=> {
-  const [posts, setPosts] = useState([]);
+export const Project = () => {
+  const [posts, setPosts] = useState("");
 
   useEffect(() => {
-    const fetchPosts = async ()=> {
+    const fetchPosts = async () => {
       const res = await axios.get("/posts");
-      setPosts(res.data)
+      setPosts(res.data);
     };
     fetchPosts();
   }, []);
@@ -20,7 +20,7 @@ export const Project = ()=> {
   return (
     <div className="Project">
       <Navbar />
-      <Posts posts={posts} />        
+      <Posts posts={posts} />
       <Footer />
     </div>
   );
