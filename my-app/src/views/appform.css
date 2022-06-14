@@ -1,0 +1,24 @@
+.error{
+    font-size: 10px;
+    color: red;
+}
+
+.signUp-btn{
+    background-color: green;
+
+}
+
+.form-width{
+    width: 860px !important;
+
+
+}
+
+
+.form-holder{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

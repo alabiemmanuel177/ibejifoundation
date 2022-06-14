@@ -12,6 +12,8 @@ import { Admin } from "./views/Admin";
 import Login from "./views/Login";
 import { Applicants } from "./views/Applicants";
 import Protectedroutes from "./components/Protectedroutes/Protectedroutes";
+import AppForm from "./views/AppForm";
+import Signup from "./views/Signup";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -25,6 +27,9 @@ root.render(
           <Route element={<Foundation />} path="thefoundation" />
           <Route element={<Project />} path="project" />
           <Route element={<Login/>} path="login"/>
+          <Route element={<AppForm/>} path="appform"/>
+          <Route element={<Signup/>} path="signup"/>
+          
           <Route element={<Protectedroutes/> }>
           <Route element={<Applicants/>} path="applicants"/>
           </Route>

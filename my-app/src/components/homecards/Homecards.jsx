@@ -1,6 +1,7 @@
 import React from "react";
 import "./homecards.css";
 import { Sponsor } from "../sponsor/Sponsor";
+import { Link } from 'react-router-dom';
 
 export const Homecards = () => {
   return (
@@ -23,6 +24,7 @@ export const Homecards = () => {
         </div>
         <div className="aboutus-button">
           <button>Ibeji Foundation</button>
+          <Link to="/"><button >Apply Now</button></Link>
         </div>
       </div>
       <Sponsor/>      
