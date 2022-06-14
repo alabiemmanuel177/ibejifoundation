@@ -9,7 +9,7 @@ import axios from "axios";
 export const  Login = ()=> {
   const userRef = useRef();
   const passwordRef = useRef();
-  const { user, dispatch, isFetching } = useContext(Context);
+  const { dispatch, isFetching } = useContext(Context);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -20,12 +20,11 @@ export const  Login = ()=> {
         password: passwordRef.current.value,
       })
       dispatch({type:"LOGIN_SUCCESS", payload: res.data})
+      res.data && window.location.replace("/admin");
     } catch (err) {
       dispatch({type:"LOGIN_FAILURE"})
     }
-  };
-
-  console.log(user);
+  }; 
   return (
     <div className="color">
       <div className="form-arr">
