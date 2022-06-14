@@ -4,7 +4,7 @@ import { Formik, Form } from 'formik'
 import * as Yup from 'yup'
 
 
-function Signup(){
+ export const Signup = () =>{
     const validate1 = Yup.object({
         firstName: Yup.string()
         .max(15, 'Must be 15 characters or less')
@@ -48,8 +48,8 @@ function Signup(){
                 <Form className="form-width">
                   <TextField label='First Name' name="firstName" type="text  "/>
                   <TextField label='Last Name' name="lastName" type="text  "/>
-                  <TextField label='Email' name="password" type="password"/>
-                  <TextField label='Phone No' name="confirmPassword" type="password"/>
+                  <TextField label='Password' name="password" type="password"/>
+                  <TextField label='Confirm Password' name="confirmPassword" type="password"/>
                  
                   <button className="mt-3 btn signUp-btn">Sign Up</button>
                 </Form>
@@ -62,4 +62,3 @@ function Signup(){
     )
 }
 
-export default Signup;

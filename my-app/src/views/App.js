@@ -8,6 +8,8 @@ import { Project } from "./Project";
 import { Admin } from "./Admin";
 import Login from "./Login";
 import { Applicants } from "./Applicants";
+import { Signup } from "../views/Signup";
+import { AppForm } from "./AppForm";
 
 export const App = () => {
   const user = false;
@@ -21,6 +23,8 @@ export const App = () => {
         <Route element={<Project />} path="project" />
         <Route element={<Login />} path="login"/>
         <Route element={<Applicants />} path="applicants" />
+        <Route element={<Signup/>} path="signup"/>
+        <Route element={<AppForm/>} path="appform"/>
       </Routes>
     </BrowserRouter>
   );

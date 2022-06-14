@@ -93,9 +93,15 @@
   }
   
   .aboutus-button button {
-    width: 150px;
+    width: 180px !important;
     height: 53px;
    
+  }
+
+  .btn-pos{
+    position: relative;
+    top: -5px;
+
   }
 
   .aboutus-text{
@@ -160,6 +166,8 @@
   .aboutus-text p{
     font-size: 12px !important;
   }
+
+
    
 
  

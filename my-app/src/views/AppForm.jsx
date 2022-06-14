@@ -6,7 +6,7 @@ import * as Yup from 'yup'
 import "../views/appform.css"
 
 
-function AppForm(){
+ export const AppForm = () =>{
     const validate = Yup.object({
         firstName: Yup.string()
         .max(15, 'Must be 15 characters or less')
@@ -46,7 +46,7 @@ function AppForm(){
            >
            {formik => (   
            <div className="form-holder">
-                <h1 className='my-4 font-weight-bold-display-4'>Signup</h1>
+                <h1 className='my-4 font-weight-bold-display-4'>Apply Here</h1>
               
                 <Form className="form-width">
                   <TextField label='First Name' name="firstName" type="text  "/>
@@ -64,4 +64,3 @@ function AppForm(){
     )
 }
 
-export default AppForm;
