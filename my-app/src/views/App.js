@@ -6,7 +6,7 @@ import { Aboutus } from "./Aboutus";
 import { Foundation } from "./Foundation";
 import { Project } from "./Project";
 import { Admin } from "./Admin";
-import Login from "./Login";
+import {Login} from "./Login";
 import { Applicants } from "./applicants";
 
 export const App = () => {
