@@ -83,6 +83,7 @@
     padding: 63px 34px;
     /* gap: 129px; */
     margin-bottom: 50px;
+    box-shadow: rgba(46, 240, 46, 0.4) -5px 5px, rgba(46, 240, 65, 0.3) -10px 10px;
   }
 
   .aboutus-text h1 {

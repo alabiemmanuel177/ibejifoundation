@@ -1,4 +1,4 @@
-td{
+/* td{
     width: 20%;
 }
 
@@ -13,4 +13,17 @@ td{
 .posts{
     width: 90%;
     margin-left: 5%;
+}
+
+tr{
+    width: 100%;
+}
+
+th{
+    width:  30% !important;
+} */
+
+
+.table-spc{
+    width: 180px;
 }

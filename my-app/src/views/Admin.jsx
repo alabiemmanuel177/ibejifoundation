@@ -2,11 +2,14 @@ import React from "react";
 import "./admin.css";
 import PostTable from "../components/PostTable/PostTable";
 import Apptable from "../components/AppTable/Apptable";
+import { AdminInfo } from "./AdminInfo";
+import { ContactTable } from "../components/ContactTable/ContactTable";
 import { useState, useEffect} from "react";
 import { BsPeople } from "react-icons/bs";
-import { AiOutlineTable } from "react-icons/ai";
+import { AiOutlineTable, AiOutlineContacts } from "react-icons/ai";
 import { MdArrowDropDown } from "react-icons/md";
 import axios from 'axios'
+
 
 export const Admin = () => {
   const [active, setActive] = useState("FirstTable");
@@ -47,6 +50,10 @@ export const Admin = () => {
             </div>
             <hr></hr>
             <div className="options">
+            <p className="option">
+                <AiOutlineContacts className="o-icon" />
+                <a onClick={() => setActive("FourthTable")}>Admin Info</a>
+              </p>
               <p className="option">
                 <BsPeople className="o-icon" />
                 <a onClick={() => setActive("FirstTable")}>Posts</a>
@@ -55,6 +62,10 @@ export const Admin = () => {
                 <AiOutlineTable className="o-icon" />
                 <a onClick={() => setActive("SecondTable")}>Applicants</a>
               </p>
+               <p className="option">
+                <AiOutlineContacts className="o-icon" />
+                <a onClick={() => setActive("ThirdTable")}>Contacts</a>
+              </p>
            
             </div>
           </div>
@@ -62,6 +73,8 @@ export const Admin = () => {
       </div>
       {active === "FirstTable" && <PostTable posts={posts} />}
       {active === "SecondTable" && <Apptable />}
+      {active === "ThirdTable" && <ContactTable/>}
+      {active === "FourthTable" && <AdminInfo/>}
     </div>
   );
 };

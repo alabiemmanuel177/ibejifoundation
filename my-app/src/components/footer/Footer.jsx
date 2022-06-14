@@ -1,43 +1,80 @@
 import React from 'react'
 import "./footer.css"
-
-
-
-
+import { TextField } from '../TextField'
+import { Formik, Form } from 'formik'
+import * as Yup from 'yup'
+import { TextArea } from '../TextArea'
 
 
 export const Footer = () => {
+    const validate2 = Yup.object({
+        firstName: Yup.string()
+        .max(15, 'Must be 15 characters or less')
+        .required('Required'),
+        lastName: Yup.string()
+        .max(15, 'Must be 15 characters or less')
+        .required('Required'),
+        email: Yup.string()
+        .email('Email is Invalid')
+        .required('Required'),
+        phoneno:Yup.number()
+        .min(11,'Phone No must be at least 11 digit')
+        .max(11, 'Phone No must not be more then 11 digits')
+        .required('required')
+        .integer('Phone No cannot have decimal')
+        .typeError('Not a number'),
+        message:Yup.string()
+        .required('required')
+        
+      })
   return (
-      <div className="footer">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<div className="footer">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+          <Formik  
+               initialValues = {{
+                FirstName: "",
+                LastName: "",
+                Email:"",
+                PhoneNo:"",
+                Message:"",
+             }} 
+             validationSchema={validate2}
+             onSubmit={values => {
+                console.log(values)
+             }}
+           >
+            {formik => (
+
+  
+      
+      
         <div className="footer-form">
             <p>Contact Us</p>
-            <form className="row g-">
-                <div className="col-md-6">
-                    <label /*for="inputFirstName"*/ className="form-label">FirstName</label>
-                    <input type="text" className="form-control" id="inputFirstName"/>
-                </div>
-                <div className="col-md-6">
-                    <label /*for="inputLastName"*/ className="form-label">LastName</label>
-                    <input type="Text" className="form-control" id="inputLastName"/>
-                </div>
-                <div className="col-md-6">
-                    <label /*for="inputEmail4"*/ className="form-label">Email</label>
-                    <input type="email" className="form-control" id="inputEmail4"/>
-                </div>
-                <div className="col-md-6">
-                    <label /*for="inputPhoneNumber"*/ className="form-label">Phone Number</label>
-                    <input type="digit" className="form-control" id="inputPhoneNumber"/>
-                </div>
-                <div className="col-md-12">
-                    <label /*for="textarea"*/ className="form-label">Message</label>
-                    <textarea className="form-control" aria-label="With textarea" id='textarea'></textarea>
-                </div>                
-                <div className="col-12">
-                    <button type="submit" className="btn btn-primary">Submit</button>
-                </div>
-            </form>           
+            
+            <Form className="row g-">
+            <div className="col-md-6">
+                  <TextField label='FirstName' name="firstName" type="text  "/>
+                  </div>
+                  <div className="col-md-6">
+                  <TextField label='LastName' name="lastName" type="text  "/>
+                  </div>
+                  <div className="col-md-6">
+                  <TextField label='Email' name="email" type="email"/>
+                  </div>
+                  <div className="col-md-6">
+                  <TextField label='PhoneNo' name="phoneno" type="number"/>
+                  </div>
+                  <TextArea label='Message' name="message" type="text"/>
+             
+                  <div className='col-md-6'>
+                  <button className=" btn signUp-btn ">Submit</button>
+                  </div>
+                </Form>
+               
         </div>
+        )}
+         </Formik>
         <div className="footer-links">
             <div className="footer-logo">
                 <img src="" alt="" />
@@ -50,5 +87,6 @@ export const Footer = () => {
             </div>
         </div>
       </div>
+      
   )
 }

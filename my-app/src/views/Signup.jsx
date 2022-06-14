@@ -18,12 +18,7 @@ import * as Yup from 'yup'
      confirmPassword: Yup.string()
         .oneOf([Yup.ref('password'), null], "Password must match")
         .required("Confirm Pasword required")
-
-    
-      
-
-
-    })
+      })
     return(
         <div>
            
