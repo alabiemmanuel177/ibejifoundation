@@ -6,10 +6,10 @@ import { Aboutus } from "./Aboutus";
 import { Foundation } from "./Foundation";
 import { Project } from "./Project";
 import { Admin } from "./Admin";
-import Login from "./Login";
 import { Applicants } from "./Applicants";
 import { Signup } from "../views/Signup";
 import { AppForm } from "./AppForm";
+import {Login} from "./Login";
 
 export const App = () => {
   const user = false;

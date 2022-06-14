@@ -1,21 +1,45 @@
+import React from "react";
 import { AiOutlineLock, AiOutlineUser } from "react-icons/ai";
 import "./login.css";
 import { BsPersonCircle } from "react-icons/bs";
+import { useContext, useRef } from "react";
+import { Context } from "../components/context/Context";
+import axios from "axios";
 
-function Login() {
+export const  Login = ()=> {
+  const userRef = useRef();
+  const passwordRef = useRef();
+  const { user, dispatch, isFetching } = useContext(Context);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    dispatch({ type: "LOGIN_START" });
+    try {
+      const res = await axios.post('/auth/login', {
+        username: userRef.current.value,
+        password: passwordRef.current.value,
+      })
+      dispatch({type:"LOGIN_SUCCESS", payload: res.data})
+    } catch (err) {
+      dispatch({type:"LOGIN_FAILURE"})
+    }
+  };
+
+  console.log(user);
   return (
     <div className="color">
       <div className="form-arr">
         <div className="login-div">
           <BsPersonCircle className="login-icon" />
         </div>
-        <form>
+        <form onSubmit={handleSubmit}>
           <label>
             <div className="field-holder">
               <input
                 type="text"
                 name="name"
                 placeholder="Username"
+                ref={userRef}
                 className="field"
               />
               <div className="icon-holder">
@@ -31,6 +55,7 @@ function Login() {
                 name="password"
                 placeholder="Password"
                 className="field"
+                ref={passwordRef}
               />
               <div className="icon-holder">
                 {" "}
@@ -38,11 +63,12 @@ function Login() {
               </div>
             </div>
           </label>
-          <input type="submit" value="Sign in" className="signin-btn" />
+          <input type="submit" value="Sign in" className="signin-btn" disabled={isFetching} />
         </form>
       </div>
     </div>
   );
 }
 
-export default Login;
+
+
