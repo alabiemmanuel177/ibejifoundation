@@ -13,7 +13,7 @@ function PostTable({ posts }) {
         <table className="table table-bordered table-width">
         <thead>
           <tr>
-            <th scope="col">ID</th>
+           
             <th scope="col" className="table-spc">Post Header</th>
             <th scope="col" className="table-spc">Post Summary</th>
             <th scope="col" className="table-spc">Post Image </th>

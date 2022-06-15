@@ -11,7 +11,7 @@ export const Table = ({post}) => {
       
         <tbody>
           <tr className="wrap">
-            <th scope="row">1</th>
+           
             <td className="bb">{post.title}</td>
             <td className="bb" >{post.desc}</td>
             <td className="bb">Farm.jpg</td>

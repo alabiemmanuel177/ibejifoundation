@@ -8,7 +8,7 @@ export const ContactTable = () => {
    
           <div className='post'>
         <h1 className='page-head'>Contacts</h1>
-        <div className='table-holder2'>
+        <div className='table-holder1' >
         <table class="table table-bordered table-width fixed">
   <thead>
     <tr>

@@ -30,35 +30,39 @@ th{
 }
 
 .table-holder{
-   
-    /* background-color: rgb(193, 193, 193);
-    padding-left: 0 !important;
-    padding-right: 100px !important;
-    padding: 10px; */
     width: 1050px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    height: 220px;
     margin-left: 20px;
     border-radius: 5px;
+    border-bottom: 30px solid white;
 }
 
-.table{
+/* .table{
     background-color: white !important;
-}
+} */
 
 .add-btn{
     width: 200px;
     float: right;
     padding: 10px;
-    position: relative;
-    left: 75px !important;
-   
     
+   
 }
 
 .table{
     position: relative;
     right: 25px;
     width: 1000px !important;
+    margin-bottom: 30px !important;
     
 }
+
+@media screen and (max-width:1366px) {
+    .add-btn{
+        float: left;
+        position: relative;
+        left: 20px;
+    }
+}
+
+
