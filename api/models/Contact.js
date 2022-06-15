@@ -1,27 +1,28 @@
-// const mongoose = require("mongoose");
+const mongoose = require("mongoose");
 
-// const ContactSchema = new mongoose.Schema(
-//   {
-//       name: {
-//           type: String,
-//           required: true,
-//       },
-//       emailaddress:{
-//           type:String,
-//           required:true,
-//       },
-//       type:{
-//         type:String,
-//         // required:true,
-//     },
-//       phoneno:{
-//         type:String,
-//         required:true,
-//       },
-//       address:{
-//           type:String,
-//       }},
-//   { timestamps: true }
-// );
+const ContactSchema = new mongoose.Schema(
+  {
+    first_name: {
+      type: String,
+      required: true,
+    },
+    last_name: {
+      type: String,
+      required: true,
+    },
+    emailaddress: {
+      type: String,
+      required: true,
+    },    
+    phoneno: {
+      type: String,
+      required: true,
+    },
+    message: {
+      type: String,
+    },
+  },
+  { timestamps: true }
+);
 
-// module.exports = mongoose.model("Applicant", ApplicantSchema)
+module.exports = mongoose.model("Contact", ContactSchema);
