@@ -1,23 +1,23 @@
 import React from "react";
-import './table.css'
-import FullBtn from '../SvgFunc/FullBtn'
-import "./posttable.css";
+import "./table.css";
+import FullBtn from "../SvgFunc/FullBtn";
 
-
-export const Table = ({post}) => {
+export const Table = ({ post }) => {
   return (
     <div className="table-holder2">
       <table className="table table-bordered table-width table-pos">
       
         <tbody>
           <tr className="wrap">
-           
-            <td className="bb">{post.title}</td>
-            <td className="bb" >{post.desc}</td>
-            <td className="bb">Farm.jpg</td>
-            <td className="bb">{post.beneficiary}</td>
-            <td className="bb">
-              <FullBtn/>
+            <td>{post.title}</td>
+            <td className="hold">{post.desc}</td>
+            <td>Farm.jpg</td>
+            <td>{post.beneficiary}</td>
+            <td>
+              <FullBtn
+                path={post._id}
+                post={post}                
+              />
             </td>
           </tr>
         </tbody>

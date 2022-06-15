@@ -1,5 +1,5 @@
 import React from 'react'
-import DelBtn from '../DelBtn'
+import {DelBtn} from '../DelBtn'
 import "./contacttable.css"
 
 
@@ -12,7 +12,7 @@ export const ContactTable = () => {
         <table class="table table-bordered table-width fixed">
   <thead>
     <tr>
-      <th scope="col">ID</th>
+ 
       <th scope="col"> First Name</th>
       <th scope="col">Last Name</th>
       <th scope="col">Email</th>
@@ -24,7 +24,7 @@ export const ContactTable = () => {
   </thead>
   <tbody>
     <tr className='wrap'>
-      <th scope="row">1</th>
+    
       <td className="hold1">Nasiru Iyidemilade </td>
       <td className="hold1"></td>
       <td className="hold1"></td>

@@ -1,14 +1,14 @@
 import React, { useContext } from "react";
 import "./admin.css";
 import PostTable from "../components/PostTable/PostTable";
-import Apptable from "../components/AppTable/Apptable";
+import { Applicantstable } from "../components/ApplicantsTable/Applicantstable";
+import { useState, useEffect } from "react";
 import { AdminInfo } from "./AdminInfo";
 import { ContactTable } from "../components/ContactTable/ContactTable";
-import { useState, useEffect} from "react";
 import { BsPeople } from "react-icons/bs";
 import { AiOutlineTable, AiOutlineContacts } from "react-icons/ai";
 import { MdArrowDropDown } from "react-icons/md";
-import axios from 'axios'
+import axios from "axios";
 import { Context } from "../components/context/Context";
 
 
@@ -17,18 +17,28 @@ export const Admin = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    const fetchPosts = async ()=> {
+    const fetchPosts = async () => {
       const res = await axios.get("/posts");
-      setPosts(res.data)
+      setPosts(res.data);
     };
     fetchPosts();
   }, []);
 
-  const {user, dispatch} = useContext(Context)
+  const { user, dispatch } = useContext(Context);
 
   const handleLogout = () => {
-    dispatch({type:"LOGOUT"})
-  }
+    dispatch({ type: "LOGOUT" });
+  };
+
+  const [applicants, setApplicants] = useState([]);
+
+  useEffect(() => {
+    const fetchApplicants = async () => {
+      const res = await axios.get("/applicants");
+      setApplicants(res.data);
+    };
+    fetchApplicants();
+  }, []);
 
   return (
     <div className="admin-holder">
@@ -50,8 +60,8 @@ export const Admin = () => {
                   </p>
                 </div>
                 <div className="dropdown-content">
-                  <a onClick={handleLogout}>{user && "Logout"}</a>
-                  <a>Change Password</a>
+                  <a href={() => false} onClick={handleLogout}>{user && "Logout"}</a>
+                  <a href={() => false}>Change Password</a>
                 </div>
               </div>
             </div>
@@ -63,11 +73,11 @@ export const Admin = () => {
               </p>
               <p className="option">
                 <BsPeople className="o-icon" />
-                <a onClick={() => setActive("FirstTable")}>Posts</a>
+                <a href={() => false}onClick={() => setActive("FirstTable")}>Posts</a>
               </p>
               <p className="option">
                 <AiOutlineTable className="o-icon" />
-                <a onClick={() => setActive("SecondTable")}>Applicants</a>
+                <a href={() => false} onClick={() => setActive("SecondTable")}>Applicants</a>
               </p>
                <p className="option">
                 <AiOutlineContacts className="o-icon" />
@@ -79,7 +89,7 @@ export const Admin = () => {
         </div>
       </div>
       {active === "FirstTable" && <PostTable posts={posts} />}
-      {active === "SecondTable" && <Apptable />}
+      {active === "SecondTable" && <Applicantstable applicants={applicants} />}
       {active === "ThirdTable" && <ContactTable/>}
       {active === "FourthTable" && <AdminInfo/>}
     </div>

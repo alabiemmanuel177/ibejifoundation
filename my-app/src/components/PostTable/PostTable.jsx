@@ -3,7 +3,7 @@ import "./posttable.css";
 import { Table } from "./Table";
 import Add from "../SvgFunc/Add";
 
-function PostTable({ posts }) {
+export const PostTable= ({posts}) => {
   return (
     <div>
       <div className="posts">
@@ -24,7 +24,8 @@ function PostTable({ posts }) {
         </table>
        
         {posts.map((p) => (
-          <Table post={p} />
+          <Table post={p} 
+          />
         ))}
          </div>
       </div>
