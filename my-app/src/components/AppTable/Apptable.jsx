@@ -26,7 +26,7 @@ function Apptable(){
       <th scope="row">1</th>
       <td className="hold1">jkjkkjkkjkkjkkjkkjkkjkkjkkjkkjkkjkkjkkjkkjkkjkkjkkjkkk</td>
       <td className="hold1">jkjkkjkkjkkjkkjkkjkkjkkjkkjkkjkkjkkjkkjkkjkkjkkjkkjkkk</td>
-      <td className="hold1">jkjkkjkkjkkjkkjkkjkkjkkjkkjkkjkkjkkjkkjkkjkkjkkjkkjkkksdkvnrohnbvionetibnm</td>
+      <td className="hold1"></td>
       <td className="hold1">yu</td>
       <td className="hold1">ou'l</td>
        <td className="hold1"><DelBtn/></td>
