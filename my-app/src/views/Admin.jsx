@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./admin.css";
 import PostTable from "../components/PostTable/PostTable";
 import Apptable from "../components/AppTable/Apptable";
@@ -9,6 +9,7 @@ import { BsPeople } from "react-icons/bs";
 import { AiOutlineTable, AiOutlineContacts } from "react-icons/ai";
 import { MdArrowDropDown } from "react-icons/md";
 import axios from 'axios'
+import { Context } from "../components/context/Context";
 
 
 export const Admin = () => {
@@ -22,6 +23,12 @@ export const Admin = () => {
     };
     fetchPosts();
   }, []);
+
+  const {user, dispatch} = useContext(Context)
+
+  const handleLogout = () => {
+    dispatch({type:"LOGOUT"})
+  }
 
   return (
     <div className="admin-holder">
@@ -43,7 +50,7 @@ export const Admin = () => {
                   </p>
                 </div>
                 <div className="dropdown-content">
-                  <a>Logout</a>
+                  <a onClick={handleLogout}>{user && "Logout"}</a>
                   <a>Change Password</a>
                 </div>
               </div>
