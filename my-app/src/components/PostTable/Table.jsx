@@ -26,10 +26,7 @@ export const Table = ({ post }) => {
             <td>
               <FullBtn
                 path={post._id}
-                post={post}
-                title={post.title}
-                desc={post.desc}
-                beneficiary={post.beneficiary}
+                post={post}                
               />
             </td>
           </tr>

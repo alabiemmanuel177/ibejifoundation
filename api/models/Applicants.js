@@ -2,23 +2,23 @@ const mongoose = require("mongoose");
 
 const ApplicantSchema = new mongoose.Schema(
   {
-      Name: {
+      name: {
           type: String,
           required: true,
       },
-      Email_Address:{
+      emailaddress:{
           type:String,
           required:true,
       },
-      Type:{
+      type:{
         type:String,
         required:true,
     },
-      Phone_No:{
+      phoneno:{
         type:String,
         required:true,
       },
-      Address:{
+      address:{
           type:String,
       }},
   { timestamps: true }
