@@ -101,6 +101,7 @@ research, vocational and humanitarian activities.
           
         </div>
         <div className="relief-activities" id="relief">
+          <h1 className="color1">RELIEF ACTIVITIES</h1>
        <p className="text"> 
       <span className="bold"> Educational Scholarship Programme</span> :- Educational Scholarship
 sponsorships are given to over 100 privileged children from some
@@ -124,7 +125,7 @@ Qur’an and Islamic Competitions, School end of year programs
 We have also donated to support Sokoto Flood Victims<br></br>
 <span className="bold">Community Mosque projects</span>  :- as part of The foundation community
 development it has supported various communities in building new
-mosques and renovating old mosques :
+mosques and renovating old mosques :<br></br>
 <div className="r-list">
 <ul>
           <li> Oba Mosque,isale – Eko Lagos Island ( Painting of the entire
@@ -143,7 +144,7 @@ and renovation works like plumbing , fixing electricity ) </li>
 mosque ) </li>
 <li>Imam Labala Mosque , Ilorin , Kwara State ( supported with
 the construction )</li>
-        </ul> </div>
+        </ul><br></br> </div>
         
         
       <span className="bold">HAJJ Sponsorship Programme :- </span>  The foundation has sponsored over
@@ -175,6 +176,7 @@ We also support by feeding some selected mosque in these communities
 on a monthly basis.
 Distribution of food items to Ikoyi prison is one of our notable yearly
 feeding programmes.
+<ul className="r-list">
 <li>Establishment and Financing of Quranic and Arabic School e.g. AlItikmah School at Alagbado, Obadeyi and Mushin , Umu-Hujatullah
 Quranic Centre.</li>
 RAMADAM Programmes :- The foundation has supported by
@@ -199,6 +201,7 @@ Mosque Ita Odo ijebu – Ogbomosho etc </li>
 Yoruba. This is awaiting publication.</li>
 <li>Involve in research work that are beneficial to the generality of people
 and community.</li>
+</ul>
 
 
 

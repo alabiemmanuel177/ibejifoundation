@@ -6,7 +6,7 @@ import { Aboutus } from "./Aboutus";
 import { Foundation } from "./Foundation";
 import { Project } from "./Project";
 import { Admin } from "./Admin";
-import { Applicants } from "./applicants";
+import { Applicants } from "./Applicants";
 import { Signup } from "../views/Signup";
 import { AppForm } from "./AppForm";
 import { Login } from "./Login";

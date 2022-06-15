@@ -1,4 +1,4 @@
-td{
+/* td{
     width: 20%;
 }
 
@@ -13,4 +13,52 @@ td{
 .posts{
     width: 90%;
     margin-left: 5%;
+}
+
+tr{
+    width: 100%;
+}
+
+th{
+    width:  30% !important;
+} */
+
+
+.table-spc{
+    width: 180px;
+    
+}
+
+.table-holder{
+   
+    /* background-color: rgb(193, 193, 193);
+    padding-left: 0 !important;
+    padding-right: 100px !important;
+    padding: 10px; */
+    width: 1050px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height: 220px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+.table{
+    background-color: white !important;
+}
+
+.add-btn{
+    width: 200px;
+    float: right;
+    padding: 10px;
+    position: relative;
+    left: 75px !important;
+   
+    
+}
+
+.table{
+    position: relative;
+    right: 25px;
+    width: 1000px !important;
+    
 }
