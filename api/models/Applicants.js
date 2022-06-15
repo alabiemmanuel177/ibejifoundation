@@ -12,7 +12,7 @@ const ApplicantSchema = new mongoose.Schema(
       },
       type:{
         type:String,
-        required:true,
+        // required:true,
     },
       phoneno:{
         type:String,

@@ -6,7 +6,6 @@ export const Table = ({ post }) => {
   return (
     <div className="table-holder2">
       <table className="table table-bordered table-width table-pos">
-      
         <tbody>
           <tr className="wrap">
             <td className="table-spc">{post.title}</td>

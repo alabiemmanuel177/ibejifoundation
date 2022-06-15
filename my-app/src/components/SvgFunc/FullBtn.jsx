@@ -27,15 +27,7 @@ function FullBtn({ path }) {
     getPost();
   }, [path]);
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   const newPost = {
-  //     title,
-  //     desc,
-  //     beneficiary,
-  //   };
-  //   axios.post("/posts");
-  // };
+
   const handleDelete = async () => {
     try {
       await axios.delete(`/posts/${path}`);

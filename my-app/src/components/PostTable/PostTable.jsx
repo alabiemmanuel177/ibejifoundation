@@ -3,7 +3,7 @@ import "./posttable.css";
 import { Table } from "./Table";
 import Add from "../SvgFunc/Add";
 
-export const PostTable= ({posts}) => {
+export const PostTable = ({ posts }) => {
   return (
     <div>
       <div className="posts">
@@ -31,6 +31,6 @@ export const PostTable= ({posts}) => {
       </div>
     </div>
   );
-}
+};
 
 export default PostTable;

@@ -1,7 +1,6 @@
-import React from 'react'
-import {DelBtn} from '../DelBtn'
-import "./contacttable.css"
-
+import React from "react";
+import { DelBtn } from "../DelBtn";
+import "./contacttable.css";
 
 export const ContactTable = () => {
   return (
@@ -38,6 +37,6 @@ export const ContactTable = () => {
 </table>
 </div>
       </div>
-   
-  )
-}
+    </div>
+  );
+};

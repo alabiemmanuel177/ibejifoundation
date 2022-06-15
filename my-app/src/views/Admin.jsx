@@ -11,7 +11,6 @@ import { MdArrowDropDown } from "react-icons/md";
 import axios from "axios";
 import { Context } from "../components/context/Context";
 
-
 export const Admin = () => {
   const [active, setActive] = useState("FirstTable");
   const [posts, setPosts] = useState([]);
@@ -56,42 +55,47 @@ export const Admin = () => {
               <div className="dropdown">
                 <div className="logout-dropdown">
                   <p>
-                    Mike Myers <MdArrowDropDown className="aIcon-pos" />
+                    {user.username}<MdArrowDropDown className="aIcon-pos" />
                   </p>
                 </div>
                 <div className="dropdown-content">
-                  <a href={() => false} onClick={handleLogout}>{user && "Logout"}</a>
+                  <a href={() => false} onClick={handleLogout}>
+                    {user && "Logout"}
+                  </a>
                   <a href={() => false}>Change Password</a>
                 </div>
               </div>
             </div>
             <hr></hr>
             <div className="options">
-            <p className="option">
+              <p className="option">
                 <AiOutlineContacts className="o-icon" />
                 <a onClick={() => setActive("FourthTable")}>Admin Info</a>
               </p>
               <p className="option">
                 <BsPeople className="o-icon" />
-                <a href={() => false}onClick={() => setActive("FirstTable")}>Posts</a>
+                <a href={() => false} onClick={() => setActive("FirstTable")}>
+                  Posts
+                </a>
               </p>
               <p className="option">
                 <AiOutlineTable className="o-icon" />
-                <a href={() => false} onClick={() => setActive("SecondTable")}>Applicants</a>
+                <a href={() => false} onClick={() => setActive("SecondTable")}>
+                  Applicants
+                </a>
               </p>
-               <p className="option">
+              <p className="option">
                 <AiOutlineContacts className="o-icon" />
                 <a onClick={() => setActive("ThirdTable")}>Contacts</a>
               </p>
-           
             </div>
           </div>
         </div>
       </div>
       {active === "FirstTable" && <PostTable posts={posts} />}
       {active === "SecondTable" && <Applicantstable applicants={applicants} />}
-      {active === "ThirdTable" && <ContactTable/>}
-      {active === "FourthTable" && <AdminInfo/>}
+      {active === "ThirdTable" && <ContactTable />}
+      {active === "FourthTable" && <AdminInfo />}
     </div>
   );
 };
