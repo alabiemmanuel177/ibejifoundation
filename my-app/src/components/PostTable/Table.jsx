@@ -6,7 +6,6 @@ export const Table = ({ post }) => {
   return (
     <div className="table-holder2">
       <table className="table table-bordered table-width table-pos">
-      
         <tbody>
           <tr className="wrap">
             <th scope="row">{post._id}</th>
@@ -15,10 +14,7 @@ export const Table = ({ post }) => {
             <td>Farm.jpg</td>
             <td>{post.beneficiary}</td>
             <td>
-              <FullBtn
-                path={post._id}
-                post={post}                
-              />
+              <FullBtn path={post._id} post={post} />
             </td>
           </tr>
         </tbody>
