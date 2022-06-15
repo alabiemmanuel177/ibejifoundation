@@ -9,11 +9,11 @@ export const Table = ({ post }) => {
       
         <tbody>
           <tr className="wrap">
-            <td>{post.title}</td>
-            <td className="hold">{post.desc}</td>
-            <td>Farm.jpg</td>
-            <td>{post.beneficiary}</td>
-            <td>
+            <td className="table-spc">{post.title}</td>
+            <td className="table-spc">{post.desc}</td>
+            <td className="table-spc">Farm.jpg</td>
+            <td className="table-spc">{post.beneficiary}</td>
+            <td className="table-spc">
               <FullBtn
                 path={post._id}
                 post={post}                
