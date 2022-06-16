@@ -11,8 +11,8 @@ export const AppForm = () => {
   const [name, setName] = useState("");
   const [emailaddress, setEmailaddress] = useState("");
   const [phoneno, setPhoneno] = useState("");
-  const [address, setAddress] = useState("")
-//   const [type, setType] = useState("")
+  const [address, setAddress] = useState("");
+  //   const [type, setType] = useState("")
   const [error, setError] = useState(false);
 
   const handleSubmit = async (e) => {
@@ -54,7 +54,7 @@ export const AppForm = () => {
       <Formik
         initialValues={{
           Name: "",
-        //   lastName: "",
+          //   lastName: "",
           Email: "",
           Phoneno: "",
           Dddress: "",
@@ -69,15 +69,40 @@ export const AppForm = () => {
             <h1 className="my-4 font-weight-bold-display-4">Apply Here</h1>
 
             <Form className="form-width" onSubmit={handleSubmit}>
-              <TextField label="Name" name="firstName" type="text" onChange={(e) => setName(e.target.value)}  />
+              <TextField
+                label="Name"
+                name="firstName"
+                type="text"
+                onChange={(e) => setName(e.target.value)}
+              />
               {/* <TextField label="Last Name" name="lastName" type="text  "onChange={(e) => setTitle(e.target.value)} /> */}
-              <TextField label="Email" name="email" type="email" onChange={(e) => setEmailaddress(e.target.value)}/>
-              <TextField label="Phoneno" name="phoneno" type="number" onChange={(e) => setPhoneno(e.target.value)}/>
-              <TextField label="Address" name="address" type="text"onChange={(e) => setAddress(e.target.value)} />
-              <button className="mt-3 btn signUp-btn" type="submit">Register</button>
+              <TextField
+                label="Email"
+                name="email"
+                type="email"
+                onChange={(e) => setEmailaddress(e.target.value)}
+              />
+              <TextField
+                label="Phoneno"
+                name="phoneno"
+                type="number"
+                onChange={(e) => setPhoneno(e.target.value)}
+              />
+              <TextField
+                label="Address"
+                name="address"
+                type="text"
+                onChange={(e) => setAddress(e.target.value)}
+              />
+              <button className="mt-3 btn signUp-btn" type="submit">
+                Register
+              </button>
             </Form>
-            {error && <span style={{ color: "red", marginTop:"10px" }}>Something Wrong!</span>}
-
+            {error && (
+              <span style={{ color: "red", marginTop: "10px" }}>
+                Something Wrong!
+              </span>
+            )}
           </div>
         )}
       </Formik>

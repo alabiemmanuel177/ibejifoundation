@@ -30,17 +30,17 @@ export const Homecards = () => {
       <Sponsor/>      
       <div className="work-card">
           <div className="work-card-image">
-              <img src="" alt="" />
+              <img src="https://www.macmillandictionary.com/external/slideshow/thumb/Grey_thumb.png" alt="" />
               <h1>Charity Work</h1>
               <h2>Read more</h2>
           </div>
           <div className="work-card-image">
-              <img src="" alt="" />
+              <img src="https://www.macmillandictionary.com/external/slideshow/thumb/Grey_thumb.png" alt="" />
               <h1>Tilling of Mosque</h1>
               <h2>Read more</h2>
           </div>
           <div className="work-card-image">
-              <img src="" alt="" />
+              <img src="https://www.macmillandictionary.com/external/slideshow/thumb/Grey_thumb.png" alt="" />
               <h1>After Renovation</h1>
               <h2>Read more</h2>
           </div>        

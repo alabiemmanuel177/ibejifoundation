@@ -14,7 +14,6 @@ import { Context } from "../components/context/Context";
 export const Admin = () => {
   const [active, setActive] = useState("FirstTable");
   const [posts, setPosts] = useState([]);
-
   useEffect(() => {
     const fetchPosts = async () => {
       const res = await axios.get("/posts");
@@ -24,19 +23,26 @@ export const Admin = () => {
   }, []);
 
   const { user, dispatch } = useContext(Context);
-
   const handleLogout = () => {
     dispatch({ type: "LOGOUT" });
   };
 
   const [applicants, setApplicants] = useState([]);
-
   useEffect(() => {
     const fetchApplicants = async () => {
       const res = await axios.get("/applicants");
       setApplicants(res.data);
     };
     fetchApplicants();
+  }, []);
+
+  const [contacts, setContacts] = useState([]);
+  useEffect(() => {
+    const fetchContacts = async () => {
+      const res = await axios.get("/contacts");
+      setContacts(res.data);
+    };
+    fetchContacts();
   }, []);
 
   return (
@@ -94,7 +100,7 @@ export const Admin = () => {
       </div>
       {active === "FirstTable" && <PostTable posts={posts} />}
       {active === "SecondTable" && <Applicantstable applicants={applicants} />}
-      {active === "ThirdTable" && <ContactTable />}
+      {active === "ThirdTable" && <ContactTable contacts={contacts}/>}
       {active === "FourthTable" && <AdminInfo />}
     </div>
   );

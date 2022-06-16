@@ -1,9 +1,9 @@
 const router = require("express").Router();
-const contact = require("../models/Contact");
+const Contact = require("../models/Contact");
 
 //CREATE CONTACT
 router.post("/", async (req, res) => {
-  const newContact = new contact(req.body);
+  const newContact = new Contact(req.body);
   try {
     const savedContact = await newContact.save();
     res.status(200).json(savedContact);
@@ -15,7 +15,7 @@ router.post("/", async (req, res) => {
 //DELETE CONTACT
 router.delete("/:id", async (req, res) => {
   try {
-    const contact = await contact.findById(req.params.id);
+    const contact = await Contact.findById(req.params.id);
     await contact.delete();
     res.status(200).json("contact has been deleted...");
   } catch (err) {
@@ -26,7 +26,7 @@ router.delete("/:id", async (req, res) => {
 //GET CONTACT
 router.get("/:id", async (req, res) => {
   try {
-    const contact = await contact.findById(req.params.id);
+    const contact = await Contact.findById(req.params.id);
     res.status(200).json(contact);
   } catch (err) {
     res.status(500).json(err);
@@ -37,7 +37,7 @@ router.get("/:id", async (req, res) => {
 router.get("/", async (req, res) => {
   try {
     let contacts;
-    contacts = await contact.find();
+    contacts = await Contact.find();
     res.status(200).json(contacts);
   } catch (err) {
     res.status(500).json(err);

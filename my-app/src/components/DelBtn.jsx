@@ -4,16 +4,22 @@ import Popup3 from "./Popup/Popup3";
 import "./delbtn2.css";
 import axios from "axios";
 
-export const DelBtn = ({ path }) => {
+export const DelBtn = ({ path, keys }) => {
   const [buttonPopup2, sBtn2] = useState(false);
 
   const handleDelete = async () => {
-    try {
-      await axios.delete(`/applicants/${path}`);
-      window.location.replace("/admin");
-    } catch (err) {}
+    if (keys === "applicant") {
+      try {
+        await axios.delete(`/applicants/${path}`);
+        window.location.replace("/admin");
+      } catch (err) {}
+    } else if (keys === "contact") {
+      try {
+        await axios.delete(`/contacts/${path}`);
+        window.location.replace("/admin");
+      } catch (err) {}
+    }
   };
-
   return (
     <div>
       <button
@@ -26,7 +32,14 @@ export const DelBtn = ({ path }) => {
       </button>
       <Popup3 trigger={buttonPopup2} setTrigger={sBtn2}>
         <h3>Are you sure you want to delete this Post</h3>
-        <button className="btn del-btn" onClick={handleDelete}>Delete</button>
+        <button
+          className="btn del-btn"
+          onClick={() => {
+            handleDelete();
+          }}
+        >
+          Delete
+        </button>
       </Popup3>
     </div>
   );
