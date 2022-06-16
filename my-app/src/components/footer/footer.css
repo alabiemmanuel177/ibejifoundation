@@ -71,3 +71,7 @@ form .col-12 button:hover {
     /* margin-left: 150px; */
   }
 }
+
+.label-txt{
+  color: white !important;
+}

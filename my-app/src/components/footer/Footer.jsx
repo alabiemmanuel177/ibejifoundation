@@ -104,12 +104,14 @@ export const Footer = () => {
                   onChange={(e) => setPhoneno(e.target.value)}
                 />
               </div>
-              <TextArea
-                label="Message"
-                name="message"
-                type="text"
-                onChange={(e) => setMessage(e.target.value)}
-              />
+              <div className="label-txt">
+                <TextArea
+                  label="Message"
+                  name="message"
+                  type="text"
+                  onChange={(e) => setMessage(e.target.value)}
+                />
+              </div>
 
               <div className="col-md-6">
                 <button type="submit" className="btn signUp-btn">

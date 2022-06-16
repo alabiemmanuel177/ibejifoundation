@@ -3,13 +3,15 @@ import "./admin.css";
 import PostTable from "../components/PostTable/PostTable";
 import { Applicantstable } from "../components/ApplicantsTable/Applicantstable";
 import { useState, useEffect } from "react";
-import { AdminInfo } from "./AdminInfo";
+
 import { ContactTable } from "../components/ContactTable/ContactTable";
 import { BsPeople } from "react-icons/bs";
 import { AiOutlineTable, AiOutlineContacts } from "react-icons/ai";
 import { MdArrowDropDown } from "react-icons/md";
 import axios from "axios";
 import { Context } from "../components/context/Context";
+import PasswordChange from "../components/PasswordChange";
+import Add from "../components/SvgFunc/Add";
 
 export const Admin = () => {
   const [active, setActive] = useState("FirstTable");
@@ -68,16 +70,15 @@ export const Admin = () => {
                   <a href={() => false} onClick={handleLogout}>
                     {user && "Logout"}
                   </a>
-                  <a href={() => false}>Change Password</a>
+                  {/* <a href={() => false} onClick={() => setPasswordPopup()}>Change Password</a> */}
+                  <PasswordChange/>
                 </div>
               </div>
             </div>
             <hr></hr>
             <div className="options">
-              <p className="option">
-                <AiOutlineContacts className="o-icon" />
-                <a onClick={() => setActive("FourthTable")}>Admin Info</a>
-              </p>
+
+            
               <p className="option">
                 <BsPeople className="o-icon" />
                 <a href={() => false} onClick={() => setActive("FirstTable")}>
@@ -100,8 +101,8 @@ export const Admin = () => {
       </div>
       {active === "FirstTable" && <PostTable posts={posts} />}
       {active === "SecondTable" && <Applicantstable applicants={applicants} />}
-      {active === "ThirdTable" && <ContactTable contacts={contacts}/>}
-      {active === "FourthTable" && <AdminInfo />}
+      {active === "ThirdTable" && <ContactTable />}
+     
     </div>
   );
 };
