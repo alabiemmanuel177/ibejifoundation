@@ -1,5 +1,4 @@
 import React from "react";
-import { DelBtn } from "../DelBtn";
 import "./contacttable.css";
 import { Table } from "./Table";
 

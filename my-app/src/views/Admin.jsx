@@ -101,7 +101,7 @@ export const Admin = () => {
       </div>
       {active === "FirstTable" && <PostTable posts={posts} />}
       {active === "SecondTable" && <Applicantstable applicants={applicants} />}
-      {active === "ThirdTable" && <ContactTable />}
+      {active === "ThirdTable" && <ContactTable contacts={contacts} />}
      
     </div>
   );
