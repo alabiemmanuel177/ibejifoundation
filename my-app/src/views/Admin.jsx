@@ -10,8 +10,7 @@ import { AiOutlineTable, AiOutlineContacts } from "react-icons/ai";
 import { MdArrowDropDown } from "react-icons/md";
 import axios from "axios";
 import { Context } from "../components/context/Context";
-import PasswordChange from "../components/PasswordChange";
-import Add from "../components/SvgFunc/Add";
+import {PasswordChange} from "../components/PasswordChange";
 
 export const Admin = () => {
   const [active, setActive] = useState("FirstTable");
@@ -47,6 +46,8 @@ export const Admin = () => {
     fetchContacts();
   }, []);
 
+  const [updateMode, setUpdateMode] = useState(false);
+
   return (
     <div className="admin-holder">
       <link
@@ -54,7 +55,6 @@ export const Admin = () => {
         rel="stylesheet"
       />
       <div className="sidebar">
-        {" "}
         <div>
           <div className="sidebar1">
             <div className="user1">
@@ -71,7 +71,7 @@ export const Admin = () => {
                     {user && "Logout"}
                   </a>
                   {/* <a href={() => false} onClick={() => setPasswordPopup()}>Change Password</a> */}
-                  <PasswordChange/>
+                  <PasswordChange id={user._id}/>
                 </div>
               </div>
             </div>

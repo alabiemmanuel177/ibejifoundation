@@ -7,7 +7,7 @@ export const Navbar = () => {
   return (
     <div className="navbar">
       <div className="logo">
-        <img src="https://res.cloudinary.com/dtddnqkn6/image/upload/v1655363388/Ibeji%20Foundation/logo_gszbtr.png" className="logo-size" alt="" />
+        <img src="https://res.cloudinary.com/dtddnqkn6/image/upload/v1655408480/Ibeji%20Foundation/logo_copy_rwgmt9.png" className="logo-size" alt="" />
       </div>
       <div className="navbar-btn">
         <Link to="/" className="Nlink">

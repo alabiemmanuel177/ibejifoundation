@@ -23,8 +23,8 @@ export const Homecards = () => {
           </p>
         </div>
         <div className="aboutus-button">
-          <button><p className="btn-pos">Ibeji Foundation</p></button>
-          <Link to="/"><button ><p className="btn-pos">Apply Now</p></button></Link>
+          <button>Ibeji Foundation</button>
+          <Link to="/apply"><button>Apply Now</button></Link>
         </div>
       </div>
       <Sponsor/>      

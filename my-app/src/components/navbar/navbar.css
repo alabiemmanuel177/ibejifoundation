@@ -184,3 +184,10 @@
 .logo{
   margin-left: 5%;
 }
+
+@media screen and (max-width:1440px) {
+  .hamburger{
+    display: none !important;
+  }
+  
+}

@@ -44,7 +44,6 @@ function FullBtn({ path }) {
       window.location.reload();
     } catch (err) {}
   };
-  // console.log(beneficiary);
   return (
     <div>
       <div className="fullbtn">

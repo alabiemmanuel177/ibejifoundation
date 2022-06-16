@@ -124,7 +124,7 @@ export const Footer = () => {
       </Formik>
       <div className="footer-links">
         <div className="footer-logo">
-          <img src="" alt="" />
+          <img src="https://res.cloudinary.com/dtddnqkn6/image/upload/v1655408480/Ibeji%20Foundation/logo_copy_rwgmt9.png" height={"150px"} alt="" />
         </div>
         <div className="footer-socials">
           <img src="icons/facebook.png" alt="" />
