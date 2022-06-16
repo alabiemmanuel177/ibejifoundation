@@ -34,7 +34,7 @@ export const Footer = () => {
           <Formik  
                initialValues = {{
                 FirstName: "",
-                LastName: "",
+                LastName: "", 
                 Email:"",
                 PhoneNo:"",
                 Message:"",
@@ -54,21 +54,22 @@ export const Footer = () => {
             
             <Form className="row g-">
             <div className="col-md-6">
-                  <TextField label='FirstName' name="firstName" type="text  "/>
+                  <TextField label='First Name' name="firstName" type="text  "/>
                   </div>
                   <div className="col-md-6">
-                  <TextField label='LastName' name="lastName" type="text  "/>
+                  <TextField label='Last Name' name="lastName" type="text  "/>
                   </div>
                   <div className="col-md-6">
-                  <TextField label='Email' name="email" type="email"/>
+                  <TextField label='Email Address' name="email" type="email"/>
                   </div>
                   <div className="col-md-6">
-                  <TextField label='PhoneNo' name="phoneno" type="number"/>
+                  <TextField label='Phone Number' name="phoneno" type="number"/>
                   </div>
-                  <TextArea label='Message' name="message" type="text"/>
-             
+                  <div className='label-txt'>
+                  <TextArea  label='Message' name="message" type="text" />
+                  </div>
                   <div className='col-md-6'>
-                  <button className=" btn signUp-btn ">Submit</button>
+                  <button className="  btn signUp-btn ">Submit</button>
                   </div>
                 </Form>
                

@@ -37,6 +37,6 @@ export const ContactTable = () => {
 </table>
 </div>
       </div>
-    </div>
+   
   );
 };

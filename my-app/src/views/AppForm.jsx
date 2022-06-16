@@ -73,6 +73,15 @@ export const AppForm = () => {
               {/* <TextField label="Last Name" name="lastName" type="text  "onChange={(e) => setTitle(e.target.value)} /> */}
               <TextField label="Email" name="email" type="email" onChange={(e) => setEmailaddress(e.target.value)}/>
               <TextField label="Phoneno" name="phoneno" type="number" onChange={(e) => setPhoneno(e.target.value)}/>
+              <div className="select">
+              <label className="mr-sm-2" for="inlineFormCustomSelect">Types</label><br></br>
+              <select className="custom-select " id="inlineFormCustomSelect">
+              <option selected>Choose...</option>
+              <option value="1">Loan</option>
+              <option value="2">Empowerment</option>
+              <option value="3">Three</option>
+              </select>
+              </div>
               <TextField label="Address" name="address" type="text"onChange={(e) => setAddress(e.target.value)} />
               <button className="mt-3 btn signUp-btn" type="submit">Register</button>
             </Form>
