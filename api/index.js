@@ -10,6 +10,7 @@ const contactRoute = require('./routes/contact')
 
 dotenv.config()
 app.use(express.json())
+const port = process.env.PORT || 5000
 
 mongoose
 .connect(process.env.MONGO_URL)
@@ -23,6 +24,6 @@ app.use('/api/applicants', applicantRoute)
 app.use('/api/contacts', contactRoute)
 
 
-app.listen("5000", ()=> {
-    console.log("Backend is running.")
+app.listen(port, ()=> {
+    console.log(`Backend is running on port ${port}.`)
 })
