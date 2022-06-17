@@ -10,7 +10,7 @@ import { AiOutlineTable, AiOutlineContacts } from "react-icons/ai";
 import { MdArrowDropDown } from "react-icons/md";
 import axios from "axios";
 import { Context } from "../components/context/Context";
-import {PasswordChange} from "../components/PasswordChange";
+import { PasswordChange } from "../components/PasswordChange";
 
 export const Admin = () => {
   const [active, setActive] = useState("FirstTable");
@@ -46,8 +46,6 @@ export const Admin = () => {
     fetchContacts();
   }, []);
 
-  const [updateMode, setUpdateMode] = useState(false);
-
   return (
     <div className="admin-holder">
       <link
@@ -63,22 +61,20 @@ export const Admin = () => {
               <div className="dropdown">
                 <div className="logout-dropdown">
                   <p>
-                    {user.username}<MdArrowDropDown className="aIcon-pos" />
+                    {user.username}
+                    <MdArrowDropDown className="aIcon-pos" />
                   </p>
                 </div>
                 <div className="dropdown-content">
                   <a href={() => false} onClick={handleLogout}>
                     {user && "Logout"}
                   </a>
-                  {/* <a href={() => false} onClick={() => setPasswordPopup()}>Change Password</a> */}
-                  <PasswordChange id={user._id}/>
+                  <PasswordChange id={user._id} />
                 </div>
               </div>
             </div>
             <hr></hr>
             <div className="options">
-
-            
               <p className="option">
                 <BsPeople className="o-icon" />
                 <a href={() => false} onClick={() => setActive("FirstTable")}>
@@ -102,7 +98,6 @@ export const Admin = () => {
       {active === "FirstTable" && <PostTable posts={posts} />}
       {active === "SecondTable" && <Applicantstable applicants={applicants} />}
       {active === "ThirdTable" && <ContactTable contacts={contacts} />}
-     
     </div>
   );
 };
