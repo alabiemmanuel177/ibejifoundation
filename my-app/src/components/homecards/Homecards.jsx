@@ -30,7 +30,7 @@ export const Homecards = () => {
       <Sponsor/>      
       <div className="work-card">
           <div className="work-card-image">
-              <img src="" alt="" />
+              <img src="" alt=""/>
               <h1>Charity Work</h1>
               <h2>Read more</h2>
           </div>

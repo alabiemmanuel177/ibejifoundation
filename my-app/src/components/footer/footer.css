@@ -68,10 +68,14 @@ form .col-12 button:hover {
 
   .footer-form {
     width: 80%;
-    /* margin-left: 150px; */
+ 
   }
 }
 
 .label-txt{
   color: white !important;
+}
+
+.footer-logo{
+  margin-bottom:30px;
 }

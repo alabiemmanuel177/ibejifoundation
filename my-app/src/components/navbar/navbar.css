@@ -32,6 +32,10 @@
 
 }
 
+.hamburger{
+  display: none;
+}
+
 @media screen and (max-width:1366px){
   .navbar-btn a{
     padding: 7px !important;
@@ -56,6 +60,8 @@
 
   .hamburger{
     display: contents;
+    position: relative;
+    right: 20px;
   }
   .dropbtn {
     background-color: #4CAF50;
@@ -68,15 +74,16 @@
   
   .dropdown {
     position: relative;
+    right: 20px;
     display: inline-block;
   }
   
   .dropdown-content {
     display: none;
     position: absolute;
-    right: 0;
+    left: -122px !important;
     top: 5px;
-    background-color: black !important;
+    background-color: rgb(207, 207, 207) !important;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;

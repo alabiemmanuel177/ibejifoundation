@@ -78,7 +78,7 @@ export const Footer = () => {
          </Formik>
         <div className="footer-links">
             <div className="footer-logo">
-                <img src="" alt="" />
+                <img src="/images/ibeji.jpg" alt="ibejilogo" width="100px" height="70px"/>
             </div>
             <div className="footer-socials">
             <img src="icons/facebook.png" alt="" />

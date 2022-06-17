@@ -14,7 +14,7 @@ export const Aboutus = () => {
             <h1> About Us</h1>
           </div>
           <div className="intro">
-            <h1>
+            <p className="text">
             The IBEJI FOUNDATION which is an abbreviation of (Ismail Bolaji Ebiti Jama’a
 in Islam) this foundation was formed in memory of late Ismail Bolaji Ebiti who
 died and was buried on the 14th of June 1986 with its aim and objective as a
@@ -30,17 +30,18 @@ Ibeji foundation came into existence in the year 2010 registered with the cooper
 Non-Governmental organization that provides access to quality education,
 research, vocational and humanitarian activities.
 
-            </h1>
-            <h1>
+            </p>
+            <p className="text car">
               OUR VISION : We aim at providing the best humanitarian services as practiced by our Prophet
            Mohammed (S.A.W).
-            </h1>
+            </p>
            
           </div>
         </div>
-        <div className="mission-statement" id="mission">
-         <h1>MISSION STATEMENT</h1>
-          <p className="poss">“Wisdom is better than weapons of war” by professing , practicing, preaching,
+        <div className="mission-statement " id="mission">
+          
+         <h1 className="text">MISSION STATEMENT</h1>
+          <p className="poss text">“Wisdom is better than weapons of war” by professing , practicing, preaching,
         protecting and propagating the deen of Islam with beautiful exhortations.
         Quran: C16 Vs125s<br></br><br></br>
         Ibeji foundation has been known to have committed its organization to support
@@ -48,60 +49,62 @@ research, vocational and humanitarian activities.
          The foundation was established with the following aims and objectives
          amongst others.<br></br><br></br><br></br>
          </p>
-          <ul>
-            <p className="color1">Bullet Points</p>
-            <li>
+          {/* <ul className="text car list-space">
+         
+            
+            <li className="text">
               To establish passion among Muslim and oppressed through
               Administration of charity ( Zakat and Sadaqah) as well as welfare package
               programmes for both young and old in the society .
             </li>
-            <li>
+            <li className="text">
               To defend and Promote the teaching and practice of correct tenets of
               islam as conferred in the Holy Quran and Sunna of the Prophet
               Mohammed (PBUH) and course of islam anywhere and anytime through
               all means .
             </li>
-            <li>
+            <li className="text">
              To promote Educational Activities Such as funding and maintaining
               educational institution , moral and organizing Islamic programmes for
               cultural advancement of citizens
             </li>
-            <li>
+            <li className="text">
               To cater for the welfare of indigents and less privileged people in the
               society.
 
             </li>
-            <li>
+            <li className="text">
              To support and empower Muslim clerics .
             </li>
-            <li>
+            <li className="text">
               To assist the old citizens and the sick.
             </li>
-            <li>
+            <li className="text">
              To provide necessary support for the widows, orphans and people in an
              emergency situation.
             </li>
-            <li>
+            <li className="text">
             To cater for the poor and the needy in alleviating poverty.
             </li>
-            <li>
+            <li className="text">
                 To provide infrastructural facilities for the house of worship irrespective
                 of the religion by expanding the crusade of the religion . 
             </li>
-            <li>
+            <li className="text">
                Participating in communal developments through our corporate social
                responsibility program e.g providing portable water ( Borehole) ,
                renovation of classes,renovation of mosques , paying monthly stipends to
                unemployed youths to acquire skills.
             </li>
-            <li>
+            <li className="text">
               To assist in Sponsoring Hajj Pilgrims 
             </li>
-          </ul>
-          
-        </div>
+      
+          </ul> */}
+          </div>
+        
         <div className="relief-activities" id="relief">
-          <h1 className="color1">RELIEF ACTIVITIES</h1>
+          <h1 className="color1 space2">RELIEF ACTIVITIES</h1>
        <p className="text"> 
       <span className="bold"> Educational Scholarship Programme</span> :- Educational Scholarship
 sponsorships are given to over 100 privileged children from some
@@ -214,7 +217,7 @@ and community.</li>
         </div>
         <div className="islamic-org" id="partners">
        <h1>PARTNERS</h1>
-       <ul>
+       <ul className="text islamic-list">
           <li>ANSAR UD –DEEN SOCIETY OF NIGERIA</li> 
           <li>MARKAZ</li> 
           <li>AL- HIKMA ISLAMIC ASSEMBLE</li> 

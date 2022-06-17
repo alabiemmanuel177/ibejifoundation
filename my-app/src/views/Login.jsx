@@ -1,7 +1,6 @@
 import React from "react";
 import { AiOutlineLock, AiOutlineUser } from "react-icons/ai";
 import "./login.css";
-import { BsPersonCircle } from "react-icons/bs";
 import { useContext, useRef } from "react";
 import { Context } from "../components/context/Context";
 import axios from "axios";
@@ -29,7 +28,7 @@ export const  Login = ()=> {
     <div className="color">
       <div className="form-arr">
         <div className="login-div">
-          <BsPersonCircle className="login-icon" />
+          <img src="/images/ibeji.jpg" alt="ibeji"  height="50px" className="login-icon" />
         </div>
         <form onSubmit={handleSubmit}>
           <label>
