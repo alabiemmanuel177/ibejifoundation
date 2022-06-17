@@ -1,32 +1,30 @@
-.fullbtn{
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    align-items: center;
-    justify-content: center;
+.fullbtn {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+.spc {
+  color: green;
+  background-color: white;
+  border: 1px solid green;
+  width: 50%;
+  margin-right: 5px;
+}
+.spc2 {
+  color: red;
+  background-color: white;
+  border: 1px solid red;
+  width: 50%;
+}
+.del-btn {
+  background-color: red !important;
+  color: white !important;
+  margin-top: 20px;
 }
 
-.spc{
-    /* margin-bottom: 10px; */
-    color: green;
-    background-color: white;
-    border: 1px solid green;
-    width: 50%;
-    margin-right: 5px;
-    /* display: flex; */
-}
-
-
-.spc2{
-    color: red;
-    background-color: white;
-    border: 1px solid red;
-    width: 50%;
-}
-
-.del-btn{
-    background-color: red !important;
-    color: white !important;
-    margin-top: 20px;
-
+form {
+  z-index: 1 !important;
 }

@@ -2,11 +2,11 @@ const mongoose = require("mongoose");
 
 const ContactSchema = new mongoose.Schema(
   {
-    first_name: {
+    firstName: {
       type: String,
       required: true,
     },
-    last_name: {
+    lastName: {
       type: String,
       required: true,
     },
@@ -16,7 +16,7 @@ const ContactSchema = new mongoose.Schema(
     },    
     phoneno: {
       type: String,
-      required: true,
+      // required: true,
     },
     message: {
       type: String,

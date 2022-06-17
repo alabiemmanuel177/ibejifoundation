@@ -23,24 +23,24 @@ export const Homecards = () => {
           </p>
         </div>
         <div className="aboutus-button">
-          <button><p className="btn-pos">Ibeji Foundation</p></button>
-          <Link to="/"><button ><p className="btn-pos">Apply Now</p></button></Link>
+          <button>Ibeji Foundation</button>
+          <Link to="/apply"><button>Apply Now</button></Link>
         </div>
       </div>
       <Sponsor/>      
       <div className="work-card">
           <div className="work-card-image">
-              <img src="" alt=""/>
+              <img src="https://www.macmillandictionary.com/external/slideshow/thumb/Grey_thumb.png" alt="" />
               <h1>Charity Work</h1>
               <h2>Read more</h2>
           </div>
           <div className="work-card-image">
-              <img src="" alt="" />
+              <img src="https://www.macmillandictionary.com/external/slideshow/thumb/Grey_thumb.png" alt="" />
               <h1>Tilling of Mosque</h1>
               <h2>Read more</h2>
           </div>
           <div className="work-card-image">
-              <img src="" alt="" />
+              <img src="https://www.macmillandictionary.com/external/slideshow/thumb/Grey_thumb.png" alt="" />
               <h1>After Renovation</h1>
               <h2>Read more</h2>
           </div>        

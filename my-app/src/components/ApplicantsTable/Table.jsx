@@ -3,6 +3,7 @@ import { DelBtn } from "../DelBtn";
 
 
 export const Table = ({ applicant }) => {
+  const variable = "applicant"
   return (
     <div className="table-holder3">
       <table className="table table-bordered table-width fixed">
@@ -26,7 +27,7 @@ export const Table = ({ applicant }) => {
             <td className="hold1">{applicant.address}</td>
             <td className="hold1">{applicant.type}</td>
             <td className="hold1">
-              <DelBtn path={applicant._id} />
+              <DelBtn path={applicant._id} keys={variable} />
             </td>
           </tr>
         </tbody>

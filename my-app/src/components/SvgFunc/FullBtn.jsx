@@ -44,7 +44,6 @@ function FullBtn({ path }) {
       window.location.reload();
     } catch (err) {}
   };
-  // console.log(beneficiary);
   return (
     <div>
       <div className="fullbtn">
@@ -58,7 +57,7 @@ function FullBtn({ path }) {
           <Svg1></Svg1>
         </button>
         <Popup1 trigger={buttonPopup} setTrigger={setButtonPopup}>
-          <form>
+          <form className="edit-popup">
             <h2>Edit Employee Info</h2>
             <div className="form-row">
               <div className="form-group form-edit">

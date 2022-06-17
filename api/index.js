@@ -20,7 +20,7 @@ app.use('/api/auth', authRoute)
 app.use('/api/users', userRoute)
 app.use('/api/posts', postRoute)
 app.use('/api/applicants', applicantRoute)
-app.use('/api/contact', contactRoute)
+app.use('/api/contacts', contactRoute)
 
 
 app.listen("5000", ()=> {
